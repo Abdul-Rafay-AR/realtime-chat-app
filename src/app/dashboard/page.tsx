@@ -7,7 +7,7 @@ const page: FC<pageProps> = ({}) => {
     return (
         <div>
             page
-            <Button>Hello World!</Button>
+            <Button variant="ghost">Hello World!</Button>
         </div>
     );
 };
