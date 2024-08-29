@@ -1,7 +1,7 @@
 "use client";
 
 import { addFriendValidator } from "@/lib/validations/add-friend";
-import Button from "./button";
+import Button from "./Button";
 import axios, { AxiosError } from "axios";
 import { useState } from "react";
 import { z } from "zod";
