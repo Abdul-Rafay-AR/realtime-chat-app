@@ -7,7 +7,7 @@ import Link from "next/link";
 import { FC, Fragment, useEffect, useState } from "react";
 import { Icons } from "../Icons";
 import SignOutButton from "./SignOutButton";
-import Button, { buttonVariants } from "./Button";
+import {Button, buttonVariants} from "@/components/ui/Button";
 import FriendRequestSidebarOptions from "./FriendRequestSidebarOptions";
 import SideBarChatList from "./SideBarChatList";
 import { Session } from "next-auth";
