@@ -38,7 +38,7 @@ const FriendRequestSidebarOptions: FC<FriendRequestSidebarOptionsProps> = ({
                 friendRequestHandler
             );
         };
-    }, []);
+    }, [sessionId]);
 
     return (
         <Link

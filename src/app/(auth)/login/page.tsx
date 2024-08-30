@@ -29,7 +29,7 @@ const Page: FC<pageProps> = ({}) => {
                     <div className="flex flex-col items-center gap-8">
                         logo
                         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                            Sing in to your account
+                            Sign in to your account
                         </h2>
                     </div>
                     <Button

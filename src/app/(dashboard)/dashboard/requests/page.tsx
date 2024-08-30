@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import { FC } from "react";
 
 const Page: FC = async ({}) => {
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     const session = await getServerSession(authOptions);
     if (!session) {
         redirect("/login");
