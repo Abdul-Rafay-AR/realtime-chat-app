@@ -50,6 +50,8 @@ export async function POST(req: Request) {
 
         // all valid, send the message
 
+        console.log("THE MESSAGE IS: ", message);
+
         pusherServer.trigger(
             toPusherKey(`chat:${chatId}`),
             "incoming-message",
