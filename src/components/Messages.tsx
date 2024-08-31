@@ -38,10 +38,11 @@ const Messages: FC<MessagesProps> = ({
         pusherClient.bind("incoming-message", messageHandler);
 
         return () => {
+            console.log("IN RETURN FUNCTION OF USEEFFECT");
             pusherClient.unsubscribe(toPusherKey(`chat:${chatId}`));
             pusherClient.unbind("incoming-message", messageHandler);
         };
-    }, [chatId]);
+    });
 
     const scrollDownRef = useRef<HTMLDivElement | null>(null);
 
