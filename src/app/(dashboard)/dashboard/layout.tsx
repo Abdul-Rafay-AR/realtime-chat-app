@@ -5,12 +5,12 @@ import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Icon, Icons } from "@/components/Icons";
-import SignOutButton from "@/components/ui/SignOutButton";
-import FriendRequestSidebarOptions from "@/components/ui/FriendRequestSidebarOptions";
+import SignOutButton from "@/components/SignOutButton";
+import FriendRequestSidebarOptions from "@/components/FriendRequestSidebarOptions";
 import { fetchRedis } from "@/helpers/redis";
 import { getFriendsByUserId } from "@/helpers/get-friends-by-user-id";
-import SideBarChatList from "@/components/ui/SideBarChatList";
-import MobileChatLayout from "@/components/ui/MobileChatLayout";
+import SideBarChatList from "@/components/SideBarChatList";
+import MobileChatLayout from "@/components/MobileChatLayout";
 import { SidebarOption } from "@/types/typings";
 
 interface LayoutProps {
