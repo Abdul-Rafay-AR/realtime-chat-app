@@ -57,6 +57,7 @@ export async function POST(req: Request) {
             "incoming-message",
             message
         );
+        console.log(pusherServer);
 
         pusherServer.trigger(
             toPusherKey(`user:${friendId}:chats`),
