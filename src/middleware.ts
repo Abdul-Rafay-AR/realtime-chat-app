@@ -41,6 +41,5 @@ export default withAuth(
 );
 
 export const config = {
-    // matchter: ["/", "/login", "/dashboard/:path*"],
-    matchter: ["/", "/login", "/dashboard/(.*)"],
+    matchter: ["/", "/login", "/dashboard/:path*"],
 };
