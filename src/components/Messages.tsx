@@ -24,9 +24,12 @@ const Messages: FC<MessagesProps> = ({
 }) => {
     const [messages, setMessages] = useState<Message[]>(initialMessages);
 
+    console.log("IN MESSAGES COMPONENT");
     useEffect(() => {
+        console.log("IN USE EFFECT");
         pusherClient.subscribe(toPusherKey(`chat:${chatId}`));
         const messageHandler = (message: Message) => {
+            console.log("IN MESSAGE HANDLER FUNCTION: ", message);
             setMessages((prev) => {
                 return [message, ...prev];
             });
